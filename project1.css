@@ -1,0 +1,240 @@
+/* Keyframes for Animations*/
+@keyframes pulse{
+	50% { transform: scale(0.976);}
+	100% { transform: scale(1);}
+}
+@keyframes cut{
+	  from {left: 0px;}
+  to {left: 92px;}
+}
+@keyframes sauce{
+	 0%   {right:0px; bottom:0px;}
+  50% {right:0px; bottom:70px;}
+  98%{right:20px; bottom:70px;}
+  100%{transform:rotate(-25deg); transform-origin: right bottom;}
+}
+@keyframes wcc{
+	0%  {right:0px; bottom:0px;}
+  25% {right:0px; bottom:70px;}
+  75%{right:120px; bottom:70px;}
+  100%{right:120px; bottom: 0px;}
+}
+@keyframes thermo{
+	 0%   {left:0px; bottom:0px;}
+  50% {left:0px; bottom:70px;}
+  98%{left:46px; bottom:70px;}
+  100%{transform:rotate(5deg); transform-origin: left bottom;}
+}
+@keyframes rfc{
+	 0%   {left:0px; bottom:0px;}
+  50% {left:0px; bottom:100px;}
+  98%{left:40px; bottom:115px;}
+  100%{transform:rotate(120deg); transform-origin:left bottom;}
+}
+
+body{
+	background-color: #6495ED;
+	font-family: Tahoma;
+}
+
+.whole{
+	width: 1450px;
+	margin: auto;
+}
+header{
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+	background-color: #6495ED;
+	margin: 0;
+}
+
+header{
+	list-style-type:none;
+}
+
+header li{
+	display: inline-block;
+	padding: 0px 20px;
+	font-family: Verdana;
+}
+header a{
+	color: black;
+	text-decoration: none;
+}
+header a:hover{
+	color: white;
+}
+#logo{
+	width: 235px;
+}
+
+main{
+	background-color: #fcfcfc;
+	padding: 14px;
+	margin: auto;
+	width: 1000px;
+	border-radius: 25px;
+	border: 2px solid black;
+}
+#topimg{
+	height: 200px;
+	background-image: url('food.jpg');
+	background-size: cover;
+	border-radius: 25px;
+}
+/* Layout for Columns on Homepage */
+#columns{
+	column-count: 2;
+	padding: 2%;
+}
+#columns a{
+	text-decoration: none;
+	color: black;
+}
+
+.boxes{
+	margin-bottom: 15px;
+	box-shadow: 0 0 5px;
+	border-radius: 25px;
+	padding: 15px;
+	break-inside: avoid;
+	font-weight: bold;
+	clear:both;
+	transition: 1s ease;
+}
+.boxes:hover{
+	transform: scale(1.03);
+	transition: 1s ease;
+}
+.boxes img{
+	border-radius: 20px;
+	width: 405px;
+	display: block;
+	margin: auto;
+	height: 200px;
+	padding-top: 10px;
+	
+}
+
+.name {
+	font-size: 15pt;
+	padding-left: 10px;
+}
+.description{
+	font-size: 10pt;
+	font-style: italic;
+	color: #262626;
+}
+/* Colors for Each Recipes Theme */
+.rvccolor{
+	background-color: rgb(200, 33, 27, .6);
+}
+.cacolor{
+	background-color: rgb(224, 192, 150, .7);
+}
+.fmcolor{
+	background-color: rgb(159, 96, 69,.5);
+}
+.cscolor{
+	background-color: rgb(158, 196, 8, .5);
+}
+.fmcolor li{
+	margin-bottom: 9px;
+}
+
+/* Header Tags */
+h1{
+	text-decoration: underline;
+	text-align: center;
+}
+h2{
+	text-align: center;
+}
+h4{
+	text-align:center;
+}
+
+.topmain{
+	font-size: 14pt;
+	padding:2px 0px;
+	border-radius: 25px;
+}
+.flexbox{
+	display: flex;
+	margin-top: 13px;
+	font-size: 14pt;
+}
+.flexbox h3{
+	text-align:center;
+	font-size: 17pt;
+	text-decoration: underline;
+	margin-bottom: -8px;
+}
+.leftflex{
+	flex-basis: 67%;
+	padding-right: 15px;
+}
+.leftflex img{
+	margin-top: 20px;
+}
+.rightflex{
+	animation: pulse 4s ease-in-out infinite;
+	flex-basis: 33%;
+	border-radius: 25px;
+	padding: 13px;
+}
+.rightflex img{
+	width: 350px;
+	border-radius: 25px;
+	border:white solid 2px;
+}
+.flexbox p {
+	font-weight: bold;
+	font-style: italic;
+	padding-left: 4px;
+	font-size: 14pt;
+}
+.leftflex li{
+	margin-bottom: 10px;
+}
+
+.cut:hover{
+	position: relative;
+	animation: cut 2s linear;
+}
+.pushright{
+	margin-left: 130px;
+	width: 130px;
+}
+.sauce:hover{
+	position: relative;
+	animation: sauce 2s linear;
+}
+.bold{
+	font-weight: bold;
+}
+.bottomimg{
+	width: 100px;
+}
+.bigimg{
+	width: 120px;
+}
+.wcc:hover{
+	position: relative;
+	animation: wcc 2s linear;
+}
+.thermo:hover{
+	position: relative;
+	animation: thermo 2s linear;
+}
+.rfc{
+	margin-left: 25px;
+	height: 110px;
+}
+.rfc:hover{
+	position: relative;
+	animation: rfc 2s linear;
+}
